@@ -1,6 +1,5 @@
 <?php
 $urlLogger = "http://hlog.local/log.php?facility=%s&machine_id=%s&line=%s";
-var_dump($_SERVER);
 $f = fopen('php://stdin', 'r');
 while ($logLine = fgets($f)) {
 	$facility = $_SERVER['argv'][1];
